@@ -1,0 +1,35 @@
+# STM32CubeIDE / Eclipse local state
+.metadata/
+**/.settings/
+**/Debug/
+**/Release/
+**/.mxproject
+**/*.launch
+**/*.launch.bak
+
+# Build products
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.log
+
+# Machine-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.env
+.env.*
+!.env.example
+
+# Local scripts and environments
+__pycache__/
+.venv/
+venv/

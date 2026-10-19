@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="350" viewBox="0 0 1120 350" role="img" aria-labelledby="title desc">
+<title id="title">Robot motion and PI wheel-speed control</title>
+<desc id="desc">Navigation provides speed and direction requests. Each wheel PI controller drives PWM and the motor, with encoder-based speed feedback. The sonar feeds wall-referenced navigation.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#52657e"/></marker></defs>
+<rect width="1120" height="350" rx="12" fill="#f6f8fc"/>
+<g fill="none" stroke="#52657e" stroke-width="2" marker-end="url(#a)">
+<path d="M210 82H240"/>
+<path d="M420 82H450"/>
+<path d="M630 82H660"/>
+<path d="M840 82H900"/>
+<path d="M990 110V206"/>
+<path d="M900 234H630"/>
+<path d="M450 234H330V110"/>
+<path d="M120 206V110"/>
+</g>
+<rect x="30" y="54" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="120" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Navigation</text>
+<text x="120" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">speed / direction</text>
+<rect x="240" y="54" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="330" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">PI controller</text>
+<text x="330" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">one per wheel</text>
+<rect x="450" y="54" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="540" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">PWM + direction</text>
+<text x="540" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">motor driver</text>
+<rect x="660" y="54" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="750" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Wheel</text>
+<text x="750" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">mechanics</text>
+<rect x="900" y="54" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="990" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Quadrature</text>
+<text x="990" y="97" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">encoder</text>
+<rect x="900" y="206" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="990" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Encoder counter</text>
+<text x="990" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">TIM3 / TIM4</text>
+<rect x="450" y="206" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="540" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Speed estimate</text>
+<text x="540" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">feedback</text>
+<rect x="30" y="206" width="180" height="56" rx="8" fill="white" stroke="#c7d2e4"/>
+<text x="120" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">Ultrasonic sensor</text>
+<text x="120" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1b2b44">wall distance</text>
+<text x="24" y="320" font-family="Arial, sans-serif" font-size="13" fill="#52657e">Conceptual architecture of the preserved firmware; physical behaviour has not been revalidated.</text></svg>
